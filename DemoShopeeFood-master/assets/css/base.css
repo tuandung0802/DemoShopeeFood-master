@@ -1,0 +1,42 @@
+:root {
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --text-color: #252525;
+}
+@font-face {
+  font-family: "Noto";
+  src: url(../font/NotoSans-Light.ttf);
+  font-family: "Noto Sans", sans-serif;
+}
+* {
+  box-sizing: inherit;
+}
+
+html {
+  /* 1 HACK */
+  font-size: 62.5%;
+  line-height: 2.2rem;
+  font-family: "Noto", sans-serif;
+  box-sizing: border-box;
+  overflow: scroll;
+  min-width: 1210px;
+  height: 100%;
+  width: 100%;
+}
+
+.grid {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.col-left {
+  width: 20%;
+  float: left;
+}
+.col-right {
+  width: calc(100% - 20% - 1200px);
+  float: left;
+}
+.grid__full-width {
+  width: 100%;
+}
